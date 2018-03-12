@@ -15,12 +15,10 @@ def search(word):
             return "Word not in database."
         else:
             return "Invalid entry, please try again. "
-
     elif word.title() in data:
         return data[word.title()]
     else:
         return "Word not in database, please make sure it's a real word."
-
 
 word = input("Enter word: ")
 definition = search(word)
